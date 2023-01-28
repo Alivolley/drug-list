@@ -1,50 +1,48 @@
-.signUp {
+.dashboard {
    direction: rtl;
-   width: fit-content;
-   margin: 5rem auto;
-   background-color: #91d8e4;
-   padding: 2rem 5rem 5rem 5rem;
-   border-radius: 1rem;
+   margin-top: 5rem;
 }
 
-.signUp-title {
-   text-align: center;
-   font-size: 3rem;
-   margin-bottom: 5rem;
-}
-
-.signUp-form {
+.dashboard-form {
    display: flex;
    flex-direction: column;
+   width: fit-content;
+   gap: 3rem;
+   margin: 0 auto;
+}
+
+.dashboard-form__filed {
+   display: flex;
+   justify-content: space-between;
    gap: 3rem;
 }
 
-.signUp-filed {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 2rem;
+.dashboard-form__label {
+   font-weight: 700;
 }
 
-.signUp-filed__label {
-}
-
-.signUp-filed__input {
+.dashboard-form__input {
    padding: 0.5rem 1rem;
    border-radius: 0.5rem;
    border: 0.2rem solid #82aae3;
 }
 
-.signUp-btn {
+.dashboard-form__btn {
    border: none;
    background-color: #82aae3;
-   padding: 0.8rem;
+   padding: 0.8rem 1.7rem;
    border-radius: 0.5rem;
    font-size: 1.7rem;
    cursor: pointer;
+   width: fit-content;
+   margin-right: auto;
 }
 
-.signUp-btn:disabled {
+textarea.dashboard-form__input {
+   resize: vertical;
+}
+
+.dashboard-form__btn:disabled {
    background-color: #dddada;
    cursor: default;
 }

@@ -1,3 +1,9 @@
 .home {
    direction: rtl;
 }
+
+.home-title {
+   text-align: center;
+   margin-top: 7rem;
+   margin-bottom: 7rem;
+}

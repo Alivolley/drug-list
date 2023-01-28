@@ -46,4 +46,5 @@
 
 .login-btn:disabled {
    background-color: #dddada;
+   cursor: default;
 }

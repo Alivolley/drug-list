@@ -38,3 +38,12 @@
    border-radius: 1rem;
    background-color: #82aae3;
 }
+
+.drugItem-left__delete {
+   border: none;
+   padding: 0.5rem 1.5rem;
+   border-radius: 1rem;
+   background-color: #ee949c;
+   font-size: 1.8rem;
+   cursor: pointer;
+}
