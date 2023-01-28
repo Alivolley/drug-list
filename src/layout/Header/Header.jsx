@@ -1,10 +1,17 @@
 import Cookies from "js-cookie";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
    let isLogin = Cookies.get("login");
+
+   let navigate = useNavigate();
+
+   const logoutHandler = () => {
+      Cookies.remove("login");
+      navigate(0);
+   };
 
    return (
       <div className="header">
@@ -13,9 +20,15 @@ const Header = () => {
          </NavLink>
 
          {isLogin ? (
-            <NavLink to="/dashboard" className="header-link">
-               داشبورد
-            </NavLink>
+            <>
+               <NavLink to="/dashboard" className="header-link">
+                  داشبورد
+               </NavLink>
+
+               <button className="header-logout" onClick={logoutHandler}>
+                  خروج از حساب کاربری
+               </button>
+            </>
          ) : (
             <>
                <NavLink to="/signUp" className="header-link">

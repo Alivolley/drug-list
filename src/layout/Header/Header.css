@@ -17,3 +17,12 @@
 .header .active {
    background-color: #82aae3;
 }
+
+.header-logout {
+   margin-right: auto;
+   border: none;
+   background-color: #f8d7da;
+   padding: 0 1rem;
+   border-radius: 1rem;
+   cursor: pointer;
+}
