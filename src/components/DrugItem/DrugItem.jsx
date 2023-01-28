@@ -7,7 +7,7 @@ const DrugItem = ({ faName, enName, cure, drugId }) => {
       <div className="drugItem">
          <div className="drugItem-right">
             <div className="drugItem-filed">
-               <label className="drugItem-filed__label">نام عملی :</label>
+               <label className="drugItem-filed__label">نام علمی :</label>
                <p className="drugItem-filed__answer">{enName}</p>
             </div>
             <div className="drugItem-filed">

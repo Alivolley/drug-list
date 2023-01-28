@@ -24,8 +24,6 @@ const SignUp = () => {
          rol: "user",
       };
 
-      console.log(JSON.stringify(newUser));
-
       fetch("http://localhost:4000/users", {
          headers: {
             "Content-Type": "application/json",
@@ -35,7 +33,7 @@ const SignUp = () => {
       })
          .then((res) => {
             if (res.status === 201) {
-               Cookies.set("login", true);
+               Cookies.set("login", "user");
                navigate(0);
             }
          })
