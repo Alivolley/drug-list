@@ -1,0 +1,40 @@
+.drugItem {
+   width: 50%;
+   margin: 3rem auto;
+   background-color: #91d8e4;
+   padding: 2rem;
+   border-radius: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.drugItem-right {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.drugItem-filed {
+   display: flex;
+   gap: 1rem;
+   font-size: 1.8rem;
+}
+
+.drugItem-filed__label {
+   font-weight: 700;
+}
+
+.drugItem-filed__answer {
+}
+
+.drugItem-left {
+}
+
+.drugItem-btn {
+   text-decoration: none;
+   color: black;
+   padding: 0.5rem 1.5rem;
+   border-radius: 1rem;
+   background-color: #82aae3;
+}

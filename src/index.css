@@ -1,13 +1,21 @@
+@font-face {
+   font-family: "vazir";
+   src: url(./assets/Fonts/Vazir.woff2);
+}
+
 html {
    font-size: 10px;
 }
 
 body {
    font-size: 1.6rem;
+   margin: 0 10rem;
+   background-color: #eafdfc;
 }
 
 * {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   font-family: "vazir";
 }
