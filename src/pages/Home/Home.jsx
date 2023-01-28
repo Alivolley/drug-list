@@ -12,8 +12,6 @@ const Home = () => {
          .catch((err) => console.log(err));
    }, []);
 
-   console.log(drugsList);
-
    return (
       <div className="home">
          {drugsList ? (
