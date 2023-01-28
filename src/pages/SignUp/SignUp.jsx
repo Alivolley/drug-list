@@ -14,13 +14,13 @@ const SignUp = () => {
             </div>
             <div className="signUp-filed">
                <label htmlFor="" className="signUp-filed__label">
-                  رمز عبور :
+                  ایمیل :
                </label>
                <input type="text" className="signUp-filed__input" />
             </div>
             <div className="signUp-filed">
                <label htmlFor="" className="signUp-filed__label">
-                  ایمیل :
+                  رمز عبور :
                </label>
                <input type="text" className="signUp-filed__input" />
             </div>
