@@ -8,7 +8,7 @@ const Header = () => {
          <NavLink to="/" className="header-link">
             صفحه اصلی
          </NavLink>
-         <NavLink to="/signup" className="header-link">
+         <NavLink to="/signUp" className="header-link">
             ثبت نام
          </NavLink>
          <NavLink to="/login" className="header-link">
