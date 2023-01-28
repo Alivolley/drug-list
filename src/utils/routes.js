@@ -3,7 +3,7 @@ import Home from "../pages/Home/Home";
 
 const routes = [
    { path: "/", element: <Home /> },
-   { path: "/drug/:id", element: <ChosenDrug /> },
+   { path: "/drug/:drugId", element: <ChosenDrug /> },
 ];
 
 export default routes;

@@ -1,0 +1,22 @@
+.chosenDrug {
+   direction: rtl;
+   margin: 3rem 0;
+   background-color: #91d8e4;
+   padding: 2rem;
+   border-radius: 2rem;
+}
+
+.chosenDrug-filed {
+   display: flex;
+   gap: 1rem;
+   font-size: 1.8rem;
+   margin-top: 3rem;
+}
+
+.chosenDrug-filed__label {
+   font-weight: 700;
+}
+
+.chosenDrug-filed__answer {
+   line-height: 3.8rem;
+}
