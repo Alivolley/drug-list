@@ -43,3 +43,7 @@
    font-size: 1.7rem;
    cursor: pointer;
 }
+
+.login-btn:disabled {
+   background-color: #dddada;
+}

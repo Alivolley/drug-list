@@ -71,19 +71,27 @@
          "describtion": "با نام تجاری زنیکال تنها داروی تایید شده برای کاهش وزن است و به صورت برگشت پذیر آنزیم روده‌ای لیپاز را مهار می‌کند و مانع جذب کامل چربی‌ها می‌شود."
       }
    ],
-
    "users": [
       {
-         "id": 1,
          "userName": "ali",
          "email": "ali@gmail.com",
-         "password": "1234"
+         "password": "1234",
+         "rol": "admin",
+         "id": 1
       },
       {
-         "id": 2,
          "userName": "mohamad",
          "email": "moh@gmail.com",
-         "password": "5678"
+         "password": "5678",
+         "rol": "user",
+         "id": 2
+      },
+      {
+         "userName": "some",
+         "email": "some@gmail.com",
+         "password": "1425",
+         "rol": "user",
+         "id": 3
       }
    ]
 }
