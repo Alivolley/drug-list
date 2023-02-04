@@ -7,6 +7,7 @@ const SignUp = () => {
    const [userName, setUserName] = useState("");
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
+   const [IsExist, setIsExist] = useState(false);
 
    let navigate = useNavigate();
 
@@ -17,24 +18,32 @@ const SignUp = () => {
    const submitHandler = (e) => {
       e.preventDefault();
 
-      let newUser = {
-         userName,
-         email,
-         password,
-         rol: "user",
-      };
-
-      fetch("http://localhost:4000/users", {
-         headers: {
-            "Content-Type": "application/json",
-         },
-         method: "POST",
-         body: JSON.stringify(newUser),
-      })
-         .then((res) => {
-            if (res.status === 201) {
-               Cookies.set("login", "user");
-               navigate(0);
+      fetch(`http://localhost:4000/users?email=${email}`)
+         .then((res) => res.status === 200 && res.json())
+         .then((data) => {
+            if (data.length) {
+               setIsExist(true);
+            } else {
+               let newUser = {
+                  userName,
+                  email,
+                  password,
+                  rol: "user",
+               };
+               fetch("http://localhost:4000/users", {
+                  headers: {
+                     "Content-Type": "application/json",
+                  },
+                  method: "POST",
+                  body: JSON.stringify(newUser),
+               })
+                  .then((res) => {
+                     if (res.status === 201) {
+                        Cookies.set("login", "user");
+                        navigate(0);
+                     }
+                  })
+                  .catch((err) => console.log(err));
             }
          })
          .catch((err) => console.log(err));
@@ -66,6 +75,7 @@ const SignUp = () => {
             <button className="signUp-btn" disabled={userName && email && password ? false : true}>
                ثبت نام
             </button>
+            {IsExist && <p className="signUp-exist">کاربری با این ایمیل موجود می باشد .</p>}
          </form>
       </div>
    );

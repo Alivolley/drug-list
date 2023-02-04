@@ -53,8 +53,6 @@ const Dashboard = () => {
          .catch((err) => console.log(err));
    };
 
-   console.log(isAdmin);
-
    return (
       <div className="dashboard">
          {isAdmin === "admin" ? (

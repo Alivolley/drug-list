@@ -92,6 +92,13 @@
       "password": "1425",
       "rol": "user",
       "id": 3
+    },
+    {
+      "userName": "gfgds",
+      "email": "a5li@gmail.com",
+      "password": "584854",
+      "rol": "user",
+      "id": 4
     }
   ]
 }
